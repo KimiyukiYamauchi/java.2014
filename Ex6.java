@@ -34,4 +34,11 @@ class Ex6{
 		
 		return ret;
 	}
+
+	public int ex6_6(int [] a, int key){
+		
+		int ret = 9999;
+		
+		return ret;
+	}
 }
