@@ -41,4 +41,9 @@ class Ex6{
 		
 		return ret;
 	}
+
+	public void ex6_7(int [] a, int key){
+		
+		return;
+	}
 }
