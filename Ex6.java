@@ -51,4 +51,9 @@ class Ex6{
 		
 		return;
 	}
+
+	public void ex6_9(int [] a, int idx, int x){
+		
+		return;
+	}
 }
