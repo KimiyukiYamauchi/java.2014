@@ -42,7 +42,12 @@ class Ex6{
 		return ret;
 	}
 
-	public void ex6_7(int [] a, int key){
+	public void ex6_7(int [] a, int idx){
+		
+		return;
+	}
+
+	public void ex6_8(int [] a, int idx, int n){
 		
 		return;
 	}

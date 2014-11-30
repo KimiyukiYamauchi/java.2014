@@ -218,6 +218,56 @@ public class Ex6Test {
 		ex6.ex6_7(a, idx);
 		assertThat(a, is(expected));
 	}
+	@Test
+	public void ex6_8_1(){
+		Ex6 ex6 = new Ex6();
+		int [] a = {1, 3, 4, 7, 9, 11};
+		int idx = 1;
+		int n = 3;
+		int [] expected = {1, 9, 11, 7, 9, 11};
+		ex6.ex6_8(a, idx, n);
+		assertThat(a, is(expected));
+	}
+	@Test
+	public void ex6_8_2(){
+		Ex6 ex6 = new Ex6();
+		int [] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		int idx = 2;
+		int n = 5;
+		int [] expected = {1, 2, 8, 9, 10, 6, 7, 8, 9, 10};
+		ex6.ex6_8(a, idx, n);
+		assertThat(a, is(expected));
+	}
+	@Test
+	public void ex6_8_3(){
+		Ex6 ex6 = new Ex6();
+		int [] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		int idx = 0;
+		int n = 9;
+		int [] expected = {10, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		ex6.ex6_8(a, idx, n);
+		assertThat(a, is(expected));
+	}
+	@Test
+	public void ex6_8_4(){
+		Ex6 ex6 = new Ex6();
+		int [] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		int idx = 9;
+		int n = 9;
+		int [] expected = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		ex6.ex6_8(a, idx, n);
+		assertThat(a, is(expected));
+	}
+	@Test
+	public void ex6_8_5(){
+		Ex6 ex6 = new Ex6();
+		int [] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		int idx = 0;
+		int n = 0;
+		int [] expected = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		ex6.ex6_8(a, idx, n);
+		assertThat(a, is(expected));
+	}
 
 	// エントリーポイント
 	public static void main(String[] args){
