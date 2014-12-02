@@ -318,6 +318,61 @@ public class Ex6Test {
 		ex6.ex6_9(a, idx, x);
 		assertThat(a, is(expected));
 	}
+	@Test
+	public void ex6_10_1(){
+		Ex6 ex6 = new Ex6();
+		int [] a = {1, 2, 3, 4, 5, 6, 7};
+		int [] b = {5, 4, 3, 2, 1};
+		int [] expected_a = {5, 4, 3, 2, 1, 6, 7};
+		int [] expected_b = {1, 2, 3, 4, 5};
+		ex6.ex6_10(a, b);
+		assertThat(a, is(expected_a));
+		assertThat(b, is(expected_b));
+	}
+	@Test
+	public void ex6_10_2(){
+		Ex6 ex6 = new Ex6();
+		int [] a = {1, 2, 3, 4, 5, 6, 7};
+		int [] b = {7, 6, 5, 4, 3, 2, 1};
+		int [] expected_a = {7, 6, 5, 4, 3, 2, 1};
+		int [] expected_b = {1, 2, 3, 4, 5, 6, 7};
+		ex6.ex6_10(a, b);
+		assertThat(a, is(expected_a));
+		assertThat(b, is(expected_b));
+	}
+	@Test
+	public void ex6_10_3(){
+		Ex6 ex6 = new Ex6();
+		int [] a = {1, 2, 3, 4, 5, 6, 7};
+		int [] b = {};
+		int [] expected_a = {1, 2, 3, 4, 5, 6, 7};
+		int [] expected_b = {};
+		ex6.ex6_10(a, b);
+		assertThat(a, is(expected_a));
+		assertThat(b, is(expected_b));
+	}
+	@Test
+	public void ex6_10_4(){
+		Ex6 ex6 = new Ex6();
+		int [] a = {1, 2, 3, 4, 5, 6, 7};
+		int [] b = {1000};
+		int [] expected_a = {1000, 2, 3, 4, 5, 6, 7};
+		int [] expected_b = {1};
+		ex6.ex6_10(a, b);
+		assertThat(a, is(expected_a));
+		assertThat(b, is(expected_b));
+	}
+	@Test
+	public void ex6_10_5(){
+		Ex6 ex6 = new Ex6();
+		int [] a = {1, 2, 3, 4, 5, 6, 7};
+		int [] b = {-1, -2, -3, -4, -5, -6, -7, -8};
+		int [] expected_a = {-1, -2, -3, -4, -5, -6, -7};
+		int [] expected_b = {1, 2, 3, 4, 5, 6, 7, -8};
+		ex6.ex6_10(a, b);
+		assertThat(a, is(expected_a));
+		assertThat(b, is(expected_b));
+	}
 
 	// エントリーポイント
 	public static void main(String[] args){
