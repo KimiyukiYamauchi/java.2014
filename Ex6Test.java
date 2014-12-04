@@ -463,6 +463,51 @@ public class Ex6Test {
 		int [] actual = ex6.ex6_12(a, x);
 		assertThat(actual, is(expected));
 	}
+	@Test
+	public void ex6_13_1(){
+		Ex6 ex6 = new Ex6();
+		int [] a = {1, 3, 4, 7, 9, 11};
+		int idx = 2;
+		int [] expected = {1, 3, 7, 9, 11};
+		int [] actual = ex6.ex6_13(a, idx);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex6_13_2(){
+		Ex6 ex6 = new Ex6();
+		int [] a = {1, 3, 4, 7, 9, 11};
+		int idx = -1;
+		int [] expected = {1, 3, 4, 7, 9, 11};
+		int [] actual = ex6.ex6_13(a, idx);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex6_13_3(){
+		Ex6 ex6 = new Ex6();
+		int [] a = {1, 3, 4, 7, 9, 11};
+		int idx = 6;
+		int [] expected = {1, 3, 4, 7, 9, 11};
+		int [] actual = ex6.ex6_13(a, idx);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex6_13_4(){
+		Ex6 ex6 = new Ex6();
+		int [] a = {};
+		int idx = 0;
+		int [] expected = {};
+		int [] actual = ex6.ex6_13(a, idx);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex6_13_5(){
+		Ex6 ex6 = new Ex6();
+		int [] a = {1, 3, 4, 7, 9, 11};
+		int idx = 5;
+		int [] expected = {1, 3, 4, 7, 9};
+		int [] actual = ex6.ex6_13(a, idx);
+		assertThat(actual, is(expected));
+	}
 
 	// エントリーポイント
 	public static void main(String[] args){
