@@ -68,4 +68,11 @@ class Ex6{
 
 		return ret;
 	}
+
+	public int [] ex6_12(int [] a, int x){
+		
+		int [] ret = new int[0];
+
+		return ret;
+	}
 }

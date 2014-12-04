@@ -379,6 +379,7 @@ public class Ex6Test {
 		int [] a = {1, 2, 3, 4, 5, 6, 7};
 		int [] expected = {1, 2, 3, 4, 5, 6, 7};
 		int [] actual = ex6.ex6_11(a);
+		a = null;
 		assertThat(actual, is(expected));
 	}
 	@Test
@@ -387,6 +388,7 @@ public class Ex6Test {
 		int [] a = {-1, -2, -3, -4, -5, -6, -7};
 		int [] expected = {-1, -2, -3, -4, -5, -6, -7};
 		int [] actual = ex6.ex6_11(a);
+		a = null;
 		assertThat(actual, is(expected));
 	}
 	@Test
@@ -395,6 +397,7 @@ public class Ex6Test {
 		int [] a = {-3, -2, -1, 0, 1, 2, 3};
 		int [] expected = {-3, -2, -1, 0, 1, 2, 3};
 		int [] actual = ex6.ex6_11(a);
+		a = null;
 		assertThat(actual, is(expected));
 	}
 	@Test
@@ -403,6 +406,7 @@ public class Ex6Test {
 		int [] a = {0};
 		int [] expected = {0};
 		int [] actual = ex6.ex6_11(a);
+		a = null;
 		assertThat(actual, is(expected));
 	}
 	@Test
@@ -411,6 +415,52 @@ public class Ex6Test {
 		int [] a = {};
 		int [] expected = {};
 		int [] actual = ex6.ex6_11(a);
+		a = null;
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex6_12_1(){
+		Ex6 ex6 = new Ex6();
+		int [] a = {1, 5, 4, 8, 5, 5, 7};
+		int [] expected = {1, 4, 5};
+		int x = 5;
+		int [] actual = ex6.ex6_12(a, x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex6_12_2(){
+		Ex6 ex6 = new Ex6();
+		int [] a = {5, 5, 5, 5, 5, 5, 5};
+		int [] expected = {0, 1, 2, 3, 4, 5, 6};
+		int x = 5;
+		int [] actual = ex6.ex6_12(a, x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex6_12_3(){
+		Ex6 ex6 = new Ex6();
+		int [] a = {0, 0, 0, 0, 0, 0, 0};
+		int [] expected = {};
+		int x = 5;
+		int [] actual = ex6.ex6_12(a, x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex6_12_4(){
+		Ex6 ex6 = new Ex6();
+		int [] a = {1, 2, 3, 4, 5, 6, 7};
+		int [] expected = {6};
+		int x = 7;
+		int [] actual = ex6.ex6_12(a, x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex6_12_5(){
+		Ex6 ex6 = new Ex6();
+		int [] a = {-1, -2, -3, -4, -5, -6, -7};
+		int [] expected = {0};
+		int x = -1;
+		int [] actual = ex6.ex6_12(a, x);
 		assertThat(actual, is(expected));
 	}
 
