@@ -14,4 +14,24 @@ class Ex7{
 		
 		return 0;
 	}
+
+	public int ex7_2(int x){
+		
+		return x;
+	}
+
+	public long ex7_2(long x){
+		
+		return x;
+	}
+
+	public float ex7_2(float x){
+		
+		return x;
+	}
+
+	public double ex7_2(double x){
+		
+		return x;
+	}
 }

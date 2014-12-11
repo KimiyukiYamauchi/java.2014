@@ -139,6 +139,102 @@ public class Ex7Test {
 		int actual = ex7.ex7_1(a);
 		assertThat(actual, is(expected));
 	}
+	@Test
+	public void ex7_2_1(){
+		Ex7 ex7 = new Ex7();
+		int x = 1;
+		int expected = 1;
+		int actual = ex7.ex7_2(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_2_2(){
+		Ex7 ex7 = new Ex7();
+		int x = -1;
+		int expected = 1;
+		int actual = ex7.ex7_2(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_2_3(){
+		Ex7 ex7 = new Ex7();
+		int x = 0;
+		int expected = 0;
+		int actual = ex7.ex7_2(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_2_4(){
+		Ex7 ex7 = new Ex7();
+		long x = 1;
+		long expected = 1;
+		long actual = ex7.ex7_2(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_2_5(){
+		Ex7 ex7 = new Ex7();
+		long x = -1;
+		long expected = 1;
+		long actual = ex7.ex7_2(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_2_6(){
+		Ex7 ex7 = new Ex7();
+		long x = 0;
+		long expected = 0;
+		long actual = ex7.ex7_2(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_2_7(){
+		Ex7 ex7 = new Ex7();
+		float x = 1.1f;
+		float expected = 1.1f;
+		float actual = ex7.ex7_2(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_2_8(){
+		Ex7 ex7 = new Ex7();
+		float x = -1.1f;
+		float expected = 1.1f;
+		float actual = ex7.ex7_2(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_2_9(){
+		Ex7 ex7 = new Ex7();
+		float x = 0;
+		float expected = 0;
+		float actual = ex7.ex7_2(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_2_10(){
+		Ex7 ex7 = new Ex7();
+		double x = 1.1;
+		double expected = 1.1;
+		double actual = ex7.ex7_2(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_2_11(){
+		Ex7 ex7 = new Ex7();
+		double x = -1.1;
+		double expected = 1.1;
+		double actual = ex7.ex7_2(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_2_12(){
+		Ex7 ex7 = new Ex7();
+		double x = 0;
+		double expected = 0;
+		double actual = ex7.ex7_2(x);
+		assertThat(actual, is(expected));
+	}
 
 
 	// エントリーポイント

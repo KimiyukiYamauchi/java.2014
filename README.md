@@ -457,3 +457,10 @@ int [] ex6_15(int [] a, int idx, int x)<br />
 int ex7_1(int a, int b)<br />
 int ex7_1(int a, int b, int c)<br />
 int ex7_1(int [] a)<br />
+
+	1. ex7_2<br />
+int型整数xの絶対値、long型整数xの絶対値、float型実数xの絶対値、double型実数xの絶対値を求める、以下に示す多重定義されたメソッド軍郡を作成せよ。<br />
+int ex7_2(int x)<br />
+long ex7_2(long x)<br />
+float ex7_2(float x)<br />
+double ex7_2(double x)<br />
