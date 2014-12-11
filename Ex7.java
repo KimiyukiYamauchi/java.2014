@@ -34,4 +34,32 @@ class Ex7{
 		
 		return x;
 	}
+
+	public String ex7_3(byte x){
+		
+		String ret = "";
+		
+		return ret;
+	}
+
+	public String ex7_3(short x){
+		
+		String ret = "";
+		
+		return ret;
+	}
+
+	public String ex7_3(int x){
+		
+		String ret = "";
+		
+		return ret;
+	}
+
+	public String ex7_3(long x){
+		
+		String ret = "";
+		
+		return ret;
+	}
 }

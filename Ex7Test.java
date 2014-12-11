@@ -235,7 +235,166 @@ public class Ex7Test {
 		double actual = ex7.ex7_2(x);
 		assertThat(actual, is(expected));
 	}
-
+	@Test
+	public void ex7_3_1(){
+		Ex7 ex7 = new Ex7();
+		byte x = 3;
+		String expected = "00000011";
+		String actual = ex7.ex7_3(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_3_2(){
+		Ex7 ex7 = new Ex7();
+		byte x = -3;
+		String expected = "11111101";
+		String actual = ex7.ex7_3(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_3_3(){
+		Ex7 ex7 = new Ex7();
+		byte x = 127;
+		String expected = "01111111";
+		String actual = ex7.ex7_3(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_3_4(){
+		Ex7 ex7 = new Ex7();
+		byte x = -128;
+		String expected = "10000000";
+		String actual = ex7.ex7_3(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_3_5(){
+		Ex7 ex7 = new Ex7();
+		byte x = 0;
+		String expected = "00000000";
+		String actual = ex7.ex7_3(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_3_6(){
+		Ex7 ex7 = new Ex7();
+		short x = 3;
+		String expected = "0000000000000011";
+		String actual = ex7.ex7_3(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_3_7(){
+		Ex7 ex7 = new Ex7();
+		short x = -3;
+		String expected = "1111111111111101";
+		String actual = ex7.ex7_3(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_3_8(){
+		Ex7 ex7 = new Ex7();
+		short x = 32767;
+		String expected = "0111111111111111";
+		String actual = ex7.ex7_3(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_3_9(){
+		Ex7 ex7 = new Ex7();
+		short x = -32768;
+		String expected = "1000000000000000";
+		String actual = ex7.ex7_3(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_3_10(){
+		Ex7 ex7 = new Ex7();
+		short x = 0;
+		String expected = "0000000000000000";
+		String actual = ex7.ex7_3(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_3_11(){
+		Ex7 ex7 = new Ex7();
+		int x = 3;
+		String expected = "00000000000000000000000000000011";
+		String actual = ex7.ex7_3(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_3_12(){
+		Ex7 ex7 = new Ex7();
+		int x = -3;
+		String expected = "11111111111111111111111111111101";
+		String actual = ex7.ex7_3(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_3_13(){
+		Ex7 ex7 = new Ex7();
+		int x = 2147483647;
+		String expected = "01111111111111111111111111111111";
+		String actual = ex7.ex7_3(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_3_14(){
+		Ex7 ex7 = new Ex7();
+		int x = -2147483648;
+		String expected = "10000000000000000000000000000000";
+		String actual = ex7.ex7_3(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_3_15(){
+		Ex7 ex7 = new Ex7();
+		int x = 0;
+		String expected = "00000000000000000000000000000000";
+		String actual = ex7.ex7_3(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_3_16(){
+		Ex7 ex7 = new Ex7();
+		long x = 3;
+		String expected = "0000000000000000000000000000000000000000000000000000000000000011";
+		String actual = ex7.ex7_3(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_3_17(){
+		Ex7 ex7 = new Ex7();
+		long x = -3;
+		String expected = "1111111111111111111111111111111111111111111111111111111111111101";
+		String actual = ex7.ex7_3(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_3_18(){
+		Ex7 ex7 = new Ex7();
+		long x = 9223372036854775807L;
+		String expected = "0111111111111111111111111111111111111111111111111111111111111111";
+		String actual = ex7.ex7_3(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_3_19(){
+		Ex7 ex7 = new Ex7();
+		long x = -9223372036854775808L;
+		String expected = "1000000000000000000000000000000000000000000000000000000000000000";
+		String actual = ex7.ex7_3(x);
+		assertThat(actual, is(expected));
+	}
+	@Test
+	public void ex7_3_20(){
+		Ex7 ex7 = new Ex7();
+		long x = 0;
+		String expected = "0000000000000000000000000000000000000000000000000000000000000000";
+		String actual = ex7.ex7_3(x);
+		assertThat(actual, is(expected));
+	}
 
 	// エントリーポイント
 	public static void main(String[] args){
